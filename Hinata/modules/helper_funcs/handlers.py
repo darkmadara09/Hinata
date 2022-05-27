@@ -35,7 +35,7 @@ from telegram import Update
 from telegram.ext import CommandHandler, Filters, MessageHandler, RegexHandler
 
 import Hinata.modules.sql.blacklistusers_sql as sql
-from Hinata import ALLOW_EXCL, DEV_USERS, GENINS, ACADEMY_USERS, JONINS, CHUNINS
+from Hinata import ALLOW_EXCL, HOKAGE_ID, GENINS, ACADEMY_USERS, JONINS, CHUNINS
 
 CMD_STARTERS = ("/", "!") if ALLOW_EXCL else ("/",)
 
@@ -43,7 +43,7 @@ CMD_STARTERS = ("/", "!") if ALLOW_EXCL else ("/",)
 class AntiSpam:
     def __init__(self):
         self.whitelist = (
-            (DEV_USERS or [])
+            (HOKAGE_ID or [])
             + (JONINS or [])
             + (ACADEMY_USERS or [])
             + (CHUNINS or [])

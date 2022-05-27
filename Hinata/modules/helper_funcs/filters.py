@@ -27,7 +27,7 @@ SOFTWARE.
 from telegram import Message
 from telegram.ext import MessageFilter
 
-from Hinata import DEV_USERS, JONINS, CHUNINS
+from Hinata import HOKAGE_ID, JONINS, CHUNINS
 
 
 class CustomFilters:
@@ -45,7 +45,7 @@ class CustomFilters:
 
     class _Developers(MessageFilter):
         def filter(self, message: Message):
-            return bool(message.from_user and message.from_user.id in DEV_USERS)
+            return bool(message.from_user and message.from_user.id in HOKAGE_ID)
 
     dev_filter = _Developers()
 

@@ -33,7 +33,7 @@ from telegram.utils.helpers import mention_html
 
 import Hinata.modules.sql.blacklistusers_sql as sql
 from Hinata import (
-    DEV_USERS,
+    HOKAGE_ID,
     GENINS,
     ACADEMY_USERS,
     NARUTO_ID,
@@ -45,8 +45,8 @@ from Hinata.modules.helper_funcs.chat_status import dev_plus
 from Hinata.modules.helper_funcs.extraction import extract_user, extract_user_and_text
 from Hinata.modules.log_channel import gloggable
 
-BLACKLISTWHITELIST = [NARUTO_ID] + DEV_USERS + JONINS + ACADEMY_USERS + CHUNINS
-BLABLEUSERS = [NARUTO_ID] + DEV_USERS
+BLACKLISTWHITELIST = [NARUTO_ID] + HOKAGE_ID + JONINS + ACADEMY_USERS + CHUNINS
+BLABLEUSERS = [NARUTO_ID] + HOKAGE_ID
 
 
 @dev_plus

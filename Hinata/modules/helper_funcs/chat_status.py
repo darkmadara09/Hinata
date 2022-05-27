@@ -34,7 +34,7 @@ from telegram.ext import CallbackContext
 
 from Hinata import (
     DEL_CMDS,
-    DEV_USERS,
+    HOKAGE_ID,
     GENINS,
     ACADEMY_USERS,
     JONINS,
@@ -50,27 +50,27 @@ THREAD_LOCK = RLock()
 
 def is_whitelist_plus(chat: Chat, user_id: int, member: ChatMember = None) -> bool:
     return any(
-        user_id in user for user in [ACADEMY_USERS, GENINS, CHUNINS, JONINS, DEV_USERS]
+        user_id in user for user in [ACADEMY_USERS, GENINS, CHUNINS, JONINS, HOKAGE_ID]
     )
 
 
 def is_support_plus(chat: Chat, user_id: int, member: ChatMember = None) -> bool:
-    return user_id in CHUNINS or user_id in JONINS or user_id in DEV_USERS
+    return user_id in CHUNINS or user_id in JONINS or user_id in HOKAGE_ID
 
 
 def is_sudo_plus(chat: Chat, user_id: int, member: ChatMember = None) -> bool:
-    return user_id in JONINS or user_id in DEV_USERS
+    return user_id in JONINS or user_id in HOKAGE_ID
 
 
 def is_stats_plus(chat: Chat, user_id: int, member: ChatMember = None) -> bool:
-    return user_id in DEV_USERS
+    return user_id in HOKAGE_ID
 
 
 def is_user_admin(chat: Chat, user_id: int, member: ChatMember = None) -> bool:
     if (
         chat.type == "private"
         or user_id in JONINS
-        or user_id in DEV_USERS
+        or user_id in HOKAGE_ID
         or chat.all_members_are_administrators
         or user_id in {777000, 1087968824}
     ):  # Count telegram and Group Anonymous as admin
@@ -111,7 +111,7 @@ def is_user_ban_protected(chat: Chat, user_id: int, member: ChatMember = None) -
     if (
         chat.type == "private"
         or user_id in JONINS
-        or user_id in DEV_USERS
+        or user_id in HOKAGE_ID
         or user_id in ACADEMY_USERS
         or user_id in GENINS
         or chat.all_members_are_administrators
@@ -136,7 +136,7 @@ def dev_plus(func):
         context.bot
         user = update.effective_user
 
-        if user.id in DEV_USERS:
+        if user.id in HOKAGE_ID:
             return func(update, context, *args, **kwargs)
         if not user:
             pass

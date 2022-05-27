@@ -32,7 +32,7 @@ from telegram.error import BadRequest, Unauthorized
 from telegram.ext import CallbackQueryHandler, CommandHandler
 
 import Hinata.modules.sql.connection_sql as sql
-from Hinata import DEV_USERS, JONINS, dispatcher
+from Hinata import HOKAGE_ID, JONINS, dispatcher
 from Hinata.modules.helper_funcs import chat_status
 from Hinata.modules.helper_funcs.alternate import send_message, typing_action
 
@@ -316,14 +316,14 @@ def connected(bot: Bot, update: Update, chat, user_id, need_admin=True):
             (isadmin)
             or (isallow and ismember)
             or (user.id in JONINS)
-            or (user.id in DEV_USERS)
+            or (user.id in HOKAGE_ID)
         ):
             if need_admin is not True:
                 return conn_id
             if (
                 getstatusadmin.status in ("administrator", "creator")
                 or user_id in JONINS
-                or user.id in DEV_USERS
+                or user.id in HOKAGE_ID
             ):
                 return conn_id
             send_message(

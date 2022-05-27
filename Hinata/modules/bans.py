@@ -38,7 +38,7 @@ from telegram.ext import CallbackContext, CallbackQueryHandler, CommandHandler, 
 from telegram.utils.helpers import mention_html
 
 from Hinata import (
-    DEV_USERS,
+    HOKAGE_ID,
     GENINS,
     LOGGER,
     ACADEMY_USERS,
@@ -96,10 +96,10 @@ def ban(update: Update, context: CallbackContext) -> str:
         message.reply_text("Oh yeah, ban myself, noob!")
         return log_message
 
-    if is_user_ban_protected(chat, user_id, member) and user not in DEV_USERS:
+    if is_user_ban_protected(chat, user_id, member) and user not in HOKAGE_ID:
         if user_id == NARUTO_ID:
             message.reply_text("Trying to put me against a Master huh?")
-        elif user_id in DEV_USERS:
+        elif user_id in HOKAGE_ID:
             message.reply_text("I can't act against our own.")
         elif user_id in JONINS:
             message.reply_text(
