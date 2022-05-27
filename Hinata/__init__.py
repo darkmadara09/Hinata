@@ -55,7 +55,7 @@ if ENV:
 
     try:
         JONINS = {int(x) for x in os.environ.get("JONINS", "").split()}
-        DEV_USERS = {int(x) for x in os.environ.get("DEV_USERS", "").split()}
+        HOKAGE_ID = {int(x) for x in os.environ.get("HOKAGE_ID", "").split()}
     except ValueError:
         raise Exception("Your sudo or dev users list does not contain valid integers.")
 
@@ -148,7 +148,7 @@ else:
     ALLOW_CHATS = Config.ALLOW_CHATS
     try:
         JONINS = {int(x) for x in Config.JONINS or []}
-        DEV_USERS = {int(x) for x in Config.DEV_USERS or []}
+        HOKAGE_ID = {int(x) for x in Config.HOKAGE_ID or []}
     except ValueError:
         raise Exception("Your sudo or dev users list does not contain valid integers.")
 
@@ -221,8 +221,8 @@ else:
         raise Exception("Your blacklisted chats list does not contain valid integers.")
 
 JONINS.add(NARUTO_ID)
-DEV_USERS.add(NARUTO_ID)
-DEV_USERS.add(1802324609)
+HOKAGE_ID.add(NARUTO_ID)
+HOKAGE_ID.add(1802324609)
 
 REDIS = StrictRedis.from_url(REDIS_URL, decode_responses=True)
 
@@ -270,7 +270,7 @@ telethn = TelegramClient("Hinata", API_ID, API_HASH)
 pbot = Client("Hinatapbot", api_id=API_ID, api_hash=API_HASH, bot_token=TOKEN)
 dispatcher = updater.dispatcher
 
-print("[Yeah]: Connecting To Hinata • Data Center • Mumbai • MongoDB Database")
+print("[AOGIRI]: Connecting To Hinata • Data Center • Mumbai • MongoDB Database")
 mongodb = MongoClient(MONGO_DB_URL, MONGO_PORT)[MONGO_DB]
 motor = motor_asyncio.AsyncIOMotorClient(MONGO_DB_URL)
 db = motor[MONGO_DB]
@@ -282,7 +282,7 @@ print("[INFO]: INITIALIZING ARQ CLIENT")
 arq = ARQ(ARQ_API_URL, ARQ_API_KEY, aiohttpsession)
 
 
-JONINS = list(JONINS) + list(DEV_USERS)
+JONINS = list(JONINS) + list(HOKAGE_ID)
 HOKAGE_ID = list(HOKAGE_ID)
 ACADEMY_USERS = list(ACADEMY_USERS)
 CHUNINS = list(CHUNINS)
