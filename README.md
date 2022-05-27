@@ -1,26 +1,33 @@
-![Hinata Hyuga](https://telegra.ph/file/d5085878395597e862248.jpg)
-# Hinata
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/6141417ceaf84545bab6bd671503df51)](https://app.codacy.com/gh/PriyanshGoswami/Hinata?utm_source=github.com&utm_medium=referral&utm_content=PriyanshGoswami/Hinata&utm_campaign=Badge_Grade_Settings)  [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/PriyanshGoswami/Hinata/graphs/commit-activity) [![GPLv3 license](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://perso.crans.org/besson/LICENSE.html) [![Open Source Love svg2](https://badges.frapsoft.com/os/v2/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badges/) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](https://makeapullrequest.com) [![Updates channel!](https://img.shields.io/badge/Join%20Channel-!-red)](https://t.me/Konohaupdates)
+![ɢᴀʟᴀxʏ ʙᴏᴛ](https://telegra.ph/file/420d2e124afe2384f32e1.jpg)
+
+# 🌌𝙜𝙖𝙡𝙖𝙭𝙮🌌 𝙜𝙧𝙤𝙪𝙥 𝙢𝙖𝙣𝙖𝙜𝙚𝙧 𝙗𝙤𝙩 
+𝗴𝗮𝗹𝗮𝘅𝘆 𝗕𝗼𝘁 𝗶𝘀 𝗧𝗘𝗟𝗘𝗚𝗥𝗔𝗠 𝗚𝗥𝗢𝗨𝗣 𝗠𝗔𝗡𝗔𝗚𝗘𝗥 𝗕𝗢𝗧 𝗪𝗜𝗧𝗛 𝗠𝗔𝗡𝗬 𝗙𝗘𝗔𝗧𝗨𝗥𝗘𝗦. 𝗧𝗛𝗜𝗦 𝗕𝗢𝗧 𝗛𝗘𝗟𝗣𝗦 𝗬𝗢𝗨 𝗧𝗢 𝗠𝗔𝗡𝗔𝗚𝗘 𝗬𝗢𝗨𝗥 𝗚𝗥𝗢𝗨𝗣𝗦 𝗘𝗔𝗦𝗜𝗟𝗬.
+
+* ᴏʀɪɢɪɴᴀʟʟʏ ᴀ sɪᴍᴘʟᴇ ɢʀᴏᴜᴘ ᴍᴀɴᴀɢᴇᴍᴇɴᴛ ʙᴏᴛ ᴡɪᴛʜ ᴍᴜʟᴛɪᴘʟᴇ ᴀᴅᴍɪɴ ғᴇᴀᴛᴜʀᴇs, ɪᴛ ʜᴀs ᴇᴠᴏʟᴠᴇᴅ ɪɴᴛᴏ ʙᴇᴄᴏᴍɪɴɢ ᴀ ʙᴀsɪs ғᴏʀ ᴍᴏᴅᴜʟᴀʀ ʙᴏᴛs ᴀɪᴍɪɴɢ ᴛᴏ ᴘʀᴏᴠɪᴅᴇ sɪᴍᴘʟᴇ ᴘʟᴜɢɪɴ ᴇxᴘᴀɴsɪᴏɴ ᴠɪᴀ ᴀ sɪᴍᴘʟᴇ ᴅʀᴀɢ ᴀɴᴅ ᴅʀᴏᴘ.[check me](http://t.me/Hinatasbot).
+
+## Dᴇᴘᴏʏ Tᴏ Hᴇʀᴏᴋᴜ
+
+[![Deploy](https://img.shields.io/badge/Deploy%20To-Heroku-blueviolet)](https://dashboard.heroku.com/new?button-url=android-app%3A%2F%2Forg.telegram.messenger%2F&template=https://github.com/PriyanshGoswami/Hinata)
+
+## Mᴀᴅᴇ Bʏ
+
+<a href="https://t.me/KonohaUpdates/17"> <img src="https://img.shields.io/badge/This%20Bot%20Was-Made%20By%20My-orange" /> <img src="https://img.shields.io/badge/Bestest-Master-ff69b4" /> </a>
 
 
-A modular Telegram Python bot running on python3 with a sqlalchemy database and an entirely themed Bot to make Hinata suitable for Anime and Manga group chats. 
+## Sᴜᴘᴘᴏʀᴛ
 
-Can be found on telegram as [Hinata](https://t.me/HinataHyuga_Robot).
+<a href="https://t.me/thanimaisupport"> <img src="https://img.shields.io/badge/Join-Our-green" /> <img src="https://img.shields.io/badge/Support-Group-critical" /> </a>
 
-The Support group can be reached out to at [Hinata Support](https://t.me/KonohaHospital), where you can ask for help about [Hinata](https://t.me/HinataHyuga_Robot), discover/request new features, report bugs, and stay in the loop whenever a new update is available. 
+## Sᴏᴜʀᴄᴇ
 
-Bot Owner [Priyansh](https://t.me/NyaaNeko) 
+* <img src="https://img.shields.io/badge/Python-red" />
 
-<h2 align="center">
-    ──「 DEPLOY ON HEROKU 」──
-</h2>
+#❤️💐CREDITS💐❤️
 
-<p align="center"><a href="https://heroku.com/deploy?template=https://github.com/PriyanshGoswami/Hinata"> <img src="https://img.shields.io/badge/Deploy%20To%20Heroku-purple?style=for-the-badge&logo=heroku" width="220" height="38.45"/></a></p>
+💐[🤴💔LONELYKING💔🤴](http://t.me/sarbudeen786)
+
+💐[🕊️⃝‌⭕ᯱꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋꠋK𝖎𝖙𝖙T𝖚𝖙𝖍𝖊M𝖊⭕𝖜o](https://t.me/Kittu_the_criminal)
 
 
-# Credits ✨
 
-```
-Priyansh
-Shalmon
-```
+* 
