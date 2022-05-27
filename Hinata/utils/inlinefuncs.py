@@ -26,7 +26,7 @@ from Hinata import (
     HOKAGE_ID,
     EVENT_LOGS, 
     BOT_USERNAME,
-    ubot2,
+    ubot
 )
 from Hinata import pbot as app 
 from Hinata import arq
