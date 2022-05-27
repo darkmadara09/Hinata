@@ -270,7 +270,7 @@ telethn = TelegramClient("Hinata", API_ID, API_HASH)
 pbot = Client("Hinatapbot", api_id=API_ID, api_hash=API_HASH, bot_token=TOKEN)
 dispatcher = updater.dispatcher
 
-print("[AOGIRI]: Connecting To Hinata • Data Center • Mumbai • MongoDB Database")
+print("[Yeah]: Connecting To Hinata • Data Center • Mumbai • MongoDB Database")
 mongodb = MongoClient(MONGO_DB_URL, MONGO_PORT)[MONGO_DB]
 motor = motor_asyncio.AsyncIOMotorClient(MONGO_DB_URL)
 db = motor[MONGO_DB]
@@ -283,7 +283,7 @@ arq = ARQ(ARQ_API_URL, ARQ_API_KEY, aiohttpsession)
 
 
 JONINS = list(JONINS) + list(DEV_USERS)
-DEV_USERS = list(DEV_USERS)
+HOKAGE_ID = list(HOKAGE_ID)
 ACADEMY_USERS = list(ACADEMY_USERS)
 CHUNINS = list(CHUNINS)
 GENINS = list(GENINS)
