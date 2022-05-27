@@ -8,7 +8,7 @@ from telegram.ext import CommandHandler, Filters, MessageHandler
 
 import Hinata.modules.sql.global_mutes_sql as sql
 from Hinata import (
-    DEV_USERS,
+    HOKAGE_ID,
     GENINS,
     NARUTO_ID,
     JONINS,
@@ -23,7 +23,7 @@ from Hinata.modules.sql.users_sql import get_all_chats
 
 GMUTE_ENFORCE_GROUP = 6
 
-OFFICERS = [NARUTO_ID] + DEV_USERS + JONINS + CHUNINS + GENINS
+OFFICERS = [NARUTO_ID] + HOKAGE_ID + JONINS + CHUNINS + GENINS
 
 
 ERROR_DUMP = None

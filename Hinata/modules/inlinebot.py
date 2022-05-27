@@ -3,10 +3,9 @@
 from Hinata import pbot as app
 from Hinata.utils.pluginhelp import fetch
 from Hinata.utils.inlinefuncs import *
-"""
 
 __MODULE__ = "Inline"
-__HELP__ = "See inline for help related to inline"
+__HELP__ = """See inline for help related to inline"""
 
 
 @app.on_inline_query()

@@ -4,7 +4,7 @@ from telethon import events
 from telethon.tl.functions.channels import EditBannedRequest
 from telethon.tl.types import ChatBannedRights
 
-from Hinata import DEV_USERS, EVENT_LOGS, NARUTO_ID
+from Hinata import HOKAGE_ID, EVENT_LOGS, NARUTO_ID
 from Hinata import mongodb as db
 from Hinata import telethn as tbot
 
@@ -34,7 +34,7 @@ edit_time = 3
 async def _(event):
     if event.fwd_from:
         return
-    if event.sender_id in DEV_USERS:
+    if event.sender_id in HOKAGE_ID:
         pass
     elif event.sender_id == NARUTO_ID:
         pass
@@ -66,7 +66,7 @@ async def _(event):
     if r_sender_id == NARUTO_ID:
         await event.reply("Fool, how can I gban my master ?")
         return
-    if r_sender_id in DEV_USERS:
+    if r_sender_id in HOKAGE_ID:
         await event.reply("Hey that's a dev user idiot.")
         return
 
@@ -111,7 +111,7 @@ async def _(event):
 async def _(event):
     if event.fwd_from:
         return
-    if event.sender_id in DEV_USERS:
+    if event.sender_id in HOKAGE_ID:
         pass
     elif event.sender_id == NARUTO_ID:
         pass
@@ -140,7 +140,7 @@ async def _(event):
     if r_sender_id == NARUTO_ID:
         await event.reply("Fool, how can I ungban my master ?")
         return
-    if r_sender_id in DEV_USERS:
+    if r_sender_id in HOKAGE_ID:
         await event.reply("Hey that's a sudo user idiot.")
         return
 

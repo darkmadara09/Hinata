@@ -50,7 +50,7 @@ from telegram.utils.helpers import escape_markdown, mention_html, mention_markdo
 
 import Hinata.modules.sql.welcome_sql as sql
 from Hinata import (
-    DEV_USERS,
+    HOKAGE_ID,
     LOGGER,
     ACADEMY_USERS,
     NARUTO_ID,
@@ -236,7 +236,7 @@ def new_member(update: Update, context: CallbackContext):  # sourcery no-metrics
                 continue
 
             # Welcome Devs
-            if new_mem.id in DEV_USERS:
+            if new_mem.id in HOKAGE_ID:
                 update.effective_message.reply_text(
                     "Whoa! A member of the Iron Blood just joined!",
                     reply_to_message_id=reply,
@@ -650,7 +650,7 @@ def left_member(update: Update, context: CallbackContext):  # sourcery no-metric
                 return
 
             # Give the devs a special goodbye
-            if left_mem.id in DEV_USERS:
+            if left_mem.id in HOKAGE_ID:
                 update.effective_message.reply_text(
                     "See you later at the Eagle Union!",
                     reply_to_message_id=reply,

@@ -2,7 +2,7 @@ import speedtest
 from telegram import InlineKeyboardButton, InlineKeyboardMarkup, ParseMode, Update
 from telegram.ext import CallbackContext, CallbackQueryHandler
 
-from Hinata import DEV_USERS, dispatcher
+from Hinata import HOKAGE_ID, dispatcher
 from Hinata.modules.disable import DisableAbleCommandHandler
 from Hinata.modules.helper_funcs.chat_status import dev_plus
 
@@ -27,7 +27,7 @@ def speedtestxyz(update: Update, context: CallbackContext):
 def speedtestxyz_callback(update: Update, context: CallbackContext):
     query = update.callback_query
 
-    if query.from_user.id in DEV_USERS:
+    if query.from_user.id in HOKAGE_ID:
         msg = update.effective_message.edit_text("Running a speedtest....")
         speed = speedtest.Speedtest()
         speed.get_best_server()

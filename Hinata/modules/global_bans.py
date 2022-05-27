@@ -10,7 +10,7 @@ from telegram.utils.helpers import mention_html
 
 import Hinata.modules.sql.global_bans_sql as sql
 from Hinata import (
-    DEV_USERS,
+    HOKAGE_ID,
     EVENT_LOGS,
     GENINS,
     ACADEMY_USERS,
@@ -79,7 +79,7 @@ def gban(update: Update, context: CallbackContext):
         )
         return
 
-    if int(user_id) in DEV_USERS:
+    if int(user_id) in HOKAGE_ID:
         message.reply_text(
             "That user is part of the Association\nI can't act against our own."
         )

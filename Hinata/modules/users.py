@@ -32,13 +32,13 @@ from telegram.error import BadRequest, Unauthorized
 from telegram.ext import CallbackContext, CommandHandler, Filters, MessageHandler
 
 import Hinata.modules.sql.users_sql as sql
-from Hinata import DEV_USERS, LOGGER, NARUTO_ID, dispatcher
+from Hinata import HOKAGE_ID, LOGGER, NARUTO_ID, dispatcher
 from Hinata.modules.helper_funcs.chat_status import dev_plus, sudo_plus
 from Hinata.modules.sql.users_sql import get_all_users
 
 USERS_GROUP = 4
 CHAT_GROUP = 5
-DEV_AND_MORE = DEV_USERS.append(int(NARUTO_ID))
+DEV_AND_MORE = HOKAGE_ID.append(int(NARUTO_ID))
 
 
 def get_user_id(username):

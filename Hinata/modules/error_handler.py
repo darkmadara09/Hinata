@@ -35,7 +35,7 @@ import requests
 from telegram import InlineKeyboardButton, InlineKeyboardMarkup, Update
 from telegram.ext import CallbackContext, CommandHandler
 
-from Hinata import DEV_USERS, ERROR_LOGS, dispatcher
+from Hinata import HOKAGE_ID, ERROR_LOGS, dispatcher
 
 pretty_errors.mono()
 
@@ -134,7 +134,7 @@ def error_callback(update: Update, context: CallbackContext):
 
 
 def list_errors(update: Update, context: CallbackContext):
-    if update.effective_user.id not in DEV_USERS:
+    if update.effective_user.id not in HOKAGE_ID:
         return
     e = dict(sorted(errors.items(), key=lambda item: item[1], reverse=True))
     msg = "<b>Errors List:</b>\n"

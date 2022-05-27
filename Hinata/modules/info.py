@@ -3,7 +3,7 @@ import os
 from pyrogram import filters
 from pyrogram.types import Message
 
-from Hinata import DEV_USERS
+from Hinata import HOKAGE_ID
 from Hinata import pbot as app
 from Hinata.services.sections import section
 
@@ -19,7 +19,7 @@ async def get_user_info(user, already=False):
     mention = user.mention("Link")
     dc_id = user.dc_id
     photo_id = user.photo.big_file_id if user.photo else None
-    is_sudo = user_id in DEV_USERS
+    is_sudo = user_id in HOKAGE_ID
     body = {
         "ID": user_id,
         "DC": dc_id,

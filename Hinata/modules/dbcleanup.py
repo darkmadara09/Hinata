@@ -32,7 +32,7 @@ from telegram.ext import CallbackContext, CallbackQueryHandler, CommandHandler
 
 import Hinata.modules.sql.global_bans_sql as gban_sql
 import Hinata.modules.sql.users_sql as user_sql
-from Hinata import DEV_USERS, NARUTO_ID, dispatcher
+from Hinata import HOKAGE_ID, NARUTO_ID, dispatcher
 from Hinata.modules.helper_funcs.chat_status import dev_plus
 
 
@@ -187,7 +187,7 @@ def callback_button(update: Update, context: CallbackContext):
     chat_id = update.effective_chat.id
     query_type = query.data
 
-    admin_list = [NARUTO_ID] + DEV_USERS
+    admin_list = [NARUTO_ID] + HOKAGE_ID
 
     bot.answer_callback_query(query.id)
 

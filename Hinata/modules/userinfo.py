@@ -43,7 +43,7 @@ from telethon.tl.types import ChannelParticipantsAdmins
 
 import Hinata.modules.sql.userinfo_sql as sql
 from Hinata import (
-    DEV_USERS,
+    HOKAGE_ID,
     GENINS,
     INFOPIC,
     ACADEMY_USERS,
@@ -327,7 +327,7 @@ def info(update: Update, context: CallbackContext):
     if user.id == NARUTO_ID:
         text += "\n\nThe Disaster level of this person is 'Lord'."
         disaster_level_present = True
-    elif user.id in DEV_USERS:
+    elif user.id in HOKAGE_ID:
         text += "\n\nThis user is member of 'Dev'."
         disaster_level_present = True
     elif user.id in JONINS:
@@ -424,7 +424,7 @@ def set_about_me(update: Update, context: CallbackContext):
     if message.reply_to_message:
         repl_message = message.reply_to_message
         repl_user_id = repl_message.from_user.id
-        if repl_user_id in [bot.id, 777000, 1415798813] and (user_id in DEV_USERS):
+        if repl_user_id in [bot.id, 777000, 1415798813] and (user_id in HOKAGE_ID):
             user_id = repl_user_id
     text = message.text
     info = text.split(None, 1)
@@ -533,11 +533,11 @@ def set_about_bio(update: Update, context: CallbackContext):
             )
             return
 
-        if user_id in [777000, 1902787452] and sender_id not in DEV_USERS:
+        if user_id in [777000, 1902787452] and sender_id not in HOKAGE_ID:
             message.reply_text("You are not authorised")
             return
 
-        if user_id == bot.id and sender_id not in DEV_USERS:
+        if user_id == bot.id and sender_id not in HOKAGE_ID:
             message.reply_text(
                 "Erm... yeah, I only trust the Ackermans to set my bio.",
             )
